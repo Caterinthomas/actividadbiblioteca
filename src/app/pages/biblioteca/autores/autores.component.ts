@@ -15,5 +15,8 @@ public nacionalidad:String;
 
   ngOnInit() {
   }
+  Saveform(){
+    alert(this.nombre)
+  }
 
 }
