@@ -1,13 +1,38 @@
-<br>
-<br>
-<br>
-<br>
-<div class="row">
-  <div class="col-6">
-    <app-student-table></app-student-table>
+<br><br>
+{{titulo}}
+<br><br><br>
+<form>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre</label>
+      <input type="text" class="form-control"  [(ngModel)]="nombre" [ngModelOptions]="{standalone:true}" placeholder="nombre">
+    </div>
   </div>
-  <div class="col-6">
-    <app-student-form></app-student-form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Apellido</label>
+      <input type="email" [(ngModel)]="apellido" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="apellido">
+    </div>
   </div>
-
-</div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Identificacion</label>
+      <input type="email" [(ngModel)]="nit" [ngModelOptions]="{standalone:true}"  class="form-control" placeholder="identificacion">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Direccion</label>
+      <input type="email" [(ngModel)]="direccion" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="direccion">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Telefono</label>
+      <input type="email" [(ngModel)]="telefono" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="telefono">
+    </div>
+  </div>
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

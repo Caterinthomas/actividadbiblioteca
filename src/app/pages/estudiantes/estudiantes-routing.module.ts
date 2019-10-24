@@ -5,8 +5,8 @@ import { EstudiantesComponent } from './estudiantes.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:EstudiantesComponent
+    path:'estudiantes',
+    component: EstudiantesComponent
   }
 ];
 

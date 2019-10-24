@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AdministrationRoutingModule } from './administration-routing.module';
 import { PermissionsComponent } from './permissions/permissions.component';
@@ -11,7 +12,9 @@ import { UsersComponent } from './users/users.component';
   declarations: [PermissionsComponent, RolesComponent, UsersComponent],
   imports: [
     CommonModule,
-    AdministrationRoutingModule
+    AdministrationRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdministrationModule { }

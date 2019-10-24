@@ -1,0 +1,12 @@
+<br><br>
+{{titulo}}
+<br><br><br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Tipo de libro</label>
+      <input type="text" class="form-control"  [(ngModel)]="tipo" [ngModelOptions]="{standalone:true}" placeholder="tipo de libro">
+    </div>
+  </div> 
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

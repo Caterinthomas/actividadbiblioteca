@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PermissionsComponent implements OnInit {
 
+  public titulo="Formulario de Permisos";
+  public permiso: String;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  Saveform(){
+    alert(this.permiso)
+  }
 }

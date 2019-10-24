@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RolesComponent implements OnInit {
 
+  public titulo="Formulario de Roles";
+  public rol: String;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+Saveform(){
+    alert(this.rol)
+  }
 }

@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
+  public titulo="formulario de Categorias";
+  public nombre: String;
+  public descripcion: String;
+  public estado: String;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+Saveform(){
+    alert(this.nombre)
+  }
+  
 }

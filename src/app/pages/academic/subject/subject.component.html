@@ -1,1 +1,25 @@
-<p>subject works!</p>
+<br><br>
+{{titulo}}
+<br><br><br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre Asignatura</label>
+      <input type="text" class="form-control"  [(ngModel)]="nombre" [ngModelOptions]="{standalone:true}" placeholder="nombre asignatura">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Creditos</label>
+      <input type="email" [(ngModel)]="creditos" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="creditos">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Observacion</label>
+      <input type="email" [(ngModel)]="observacion" [ngModelOptions]="{standalone:true}"  class="form-control" placeholder="observacion">
+    </div>
+  </div>
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

@@ -1,1 +1,37 @@
-<p>editorial works!</p>
+<br><br>
+{{titulo}}
+<br><br><br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre Editorial</label>
+      <input type="text" class="form-control"  [(ngModel)]="nombre" [ngModelOptions]="{standalone:true}" placeholder="nombre">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Direccion</label>
+      <input type="email" [(ngModel)]="direccion" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="direccion">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Telefono</label>
+      <input type="email" [(ngModel)]="telefono" [ngModelOptions]="{standalone:true}"  class="form-control" placeholder="telefono">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Provincia</label>
+      <input type="email" [(ngModel)]="provincia" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="provincia">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">URL</label>
+      <input type="email" [(ngModel)]="url" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="url">
+    </div>
+  </div>
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

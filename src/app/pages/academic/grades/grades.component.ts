@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GradesComponent implements OnInit {
 
+  public titulo="Formulario de Grados";
+  public grado: String;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  Saveform(){
+    alert(this.grado)
   }
 
 }

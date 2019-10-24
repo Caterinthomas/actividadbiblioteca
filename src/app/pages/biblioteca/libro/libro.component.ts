@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibroComponent implements OnInit {
 
+  public titulo="formulario de Libros";
+  public tlibro: String;
+  public descripcion: String;
+  public npaginas: String;
+  public anno: String;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  Saveform(){
+    alert(this.tlibro)
   }
 
 }

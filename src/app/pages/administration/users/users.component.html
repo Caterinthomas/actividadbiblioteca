@@ -1,1 +1,37 @@
-<p>users works!</p>
+<br><br>
+{{titulo}}
+<br><br><br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre del usuario</label>
+      <input type="text" class="form-control"  [(ngModel)]="nombre" [ngModelOptions]="{standalone:true}" placeholder="nombre usuario">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Apellido del usuario</label>
+      <input type="email" [(ngModel)]="apellido" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="apellido usuario">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Usuario</label>
+      <input type="email" [(ngModel)]="nick" [ngModelOptions]="{standalone:true}"  class="form-control" placeholder="nick del usuario">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Contraseña</label>
+      <input type="email" [(ngModel)]="password" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="contraseña">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Confirmar contraseña</label>
+      <input type="email" [(ngModel)]="cpassword" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="confirmar contraseña">
+    </div>
+  </div>
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

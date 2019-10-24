@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorialComponent implements OnInit {
 
+  public titulo="formulario de Editorial";
+  public nombre: String;
+  public direccion: String;
+  public telefono: String;
+  public provincia: String;
+  public url: String;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  Saveform(){
+    alert(this.nombre)
   }
 
 }

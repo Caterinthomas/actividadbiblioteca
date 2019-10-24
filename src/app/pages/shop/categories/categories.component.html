@@ -1,1 +1,26 @@
-<p>categories works!</p>
+<br><br>
+{{titulo}}
+<br>
+<br><br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre Categorias</label>
+      <input type="text" class="form-control"  [(ngModel)]="nombre" [ngModelOptions]="{standalone:true}" placeholder="nombre">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Descripcion</label>
+      <input type="email" [(ngModel)]="descripcion" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="descripcion">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Estado</label>
+      <input type="email" [(ngModel)]="estado" [ngModelOptions]="{standalone:true}"  class="form-control" placeholder="estado">
+    </div>
+  </div>
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

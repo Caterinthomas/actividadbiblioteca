@@ -1,1 +1,31 @@
-<p>articules works!</p>
+<br><br>
+{{titulo}}
+<br><br><br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nombre Articulo</label>
+      <input type="text" class="form-control"  [(ngModel)]="nombre" [ngModelOptions]="{standalone:true}" placeholder="nombre articulo">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Descripcion</label>
+      <input type="email" [(ngModel)]="descripcion" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="descripcion">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Unidad</label>
+      <input type="email" [(ngModel)]="unidad" [ngModelOptions]="{standalone:true}"  class="form-control" placeholder="unidad">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Cantidad</label>
+      <input type="email" [(ngModel)]="cantidad" [ngModelOptions]="{standalone:true}" class="form-control" placeholder="cantidad">
+    </div>
+  </div>
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

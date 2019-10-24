@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticulesComponent implements OnInit {
 
+  public titulo="Formulario de Articulos";
+  public nombre: String;
+  public descripcion: String;
+  public unidad: String;
+  public cantidad: String;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  Saveform(){
+    alert(this.nombre)
   }
 
 }
