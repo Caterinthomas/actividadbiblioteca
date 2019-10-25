@@ -1,1 +1,20 @@
-<p>existencia-form works!</p>
+<br><br>
+<br><br><br>
+<form FormGroup='autoForm'>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Nombre</label>
+      <input type="text" FormControlName='nombre' name='nombre' class="form-control" placeholder="nombre">
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Fecha de nacimiento</label>
+      <input type="text"   name='fechaNac' class="form-control" placeholder="fecha">
+    </div>
+  </div>
+  
+  
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>

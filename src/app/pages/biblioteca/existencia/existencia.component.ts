@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-existencia',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./existencia.component.css']
 })
 export class ExistenciaComponent implements OnInit {
-
-  constructor() { }
+public autoForm:FormGroup;
+  constructor(protected fb:FormBuilder) { }
 
   ngOnInit() {
+  }
+  createForm(){
+    this.autoForm=this.fb.group({
+  codigo:'',
+  nombre:'',
+  fechaNac:''
+    });
   }
 
 }
