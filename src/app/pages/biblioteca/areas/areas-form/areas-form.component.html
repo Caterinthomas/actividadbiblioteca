@@ -1,27 +1,23 @@
 <br><br>
 {{titulo}}
 <br><br><br>
-<form>
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Areas</label>
-      <input type="text" class="form-control"  [(ngModel)]="areas" [ngModelOptions]="{standalone:true}" placeholder="areas">
-    </div>
-</div> 
+{{titulo}}
 
-<div class="form-row">
-    <div class="form-group col-md-6">
-        <label for="inputEmail4">Pasillo</label>
-        <input type="text" class="form-control"  [(ngModel)]="pasillo" [ngModelOptions]="{standalone:true}" placeholder="pasillo">
-    </div>
-</div> 
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-        <label for="inputEmail4">Estanteria</label>
-        <input type="text" class="form-control"  [(ngModel)]="estanteria" [ngModelOptions]="{standalone:true}" placeholder="estanteria">
-    </div>
-</div> 
-
-  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
-</form>
+  <form FormGroup='areasFormulario' >
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <label >Codigo</label>
+        <input type="text" class="form-control" FormControlName="code" >
+       </div>
+      
+  </div> 
+  
+  <div class="form-row">
+      <div class="form-group col-md-6">
+          <label>Descripcion</label>
+          <input type="text" class="form-control"  FormControlName="description" >
+      </div>
+  </div> 
+  
+      <button type="submit"  class="btn btn-primary">Guardar</button> 
+  </form>
