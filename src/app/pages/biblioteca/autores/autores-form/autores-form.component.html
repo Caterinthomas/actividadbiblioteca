@@ -1,1 +1,43 @@
-<p>autores-form works!</p>
+  
+{{titulo}}
+<br>
+<form FormGroup="autorFormulario">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>code</label>
+      <input type="text"  name="code" class="form-control" FormControlName="code">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Nombre</label>
+      <input type="text"  name="name" class="form-control" FormControlName="name">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Apellido</label>
+      <input type="text"  name="lastname" class="form-control" FormControlName="lastname">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Año de nacimiento</label>
+      <input type="text"  name="bd_year" class="form-control" FormControlName="bd_year">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Año de fallecimiento</label>
+      <input type="text"  name="death_year" class="form-control" FormControlName="death_year">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>lugar de nacimiento</label>
+      <input type="text"  name="bd_place" class="form-control" FormControlName="bd_place">
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
