@@ -1,5 +1,5 @@
-  
-{{titulo}}
+ 
+{{authoform.value|json}}
 <br>
 <form FormGroup="autorFormulario">
   <div class="form-row">
@@ -39,5 +39,7 @@
     </div>
   </div>
   
-  <button type="submit" class="btn btn-primary">Guardar</button>
+  <button (click)= "saveAuthor()" class="btn btn-primary">Guardar</button>
 </form>
+
+
