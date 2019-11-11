@@ -1,45 +1,58 @@
  
-{{authoform.value|json}}
+
 <br>
-<form FormGroup="autorFormulario">
+<form [formGroup]="autorFormulario">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>code</label>
-      <input type="text"  name="code" class="form-control" FormControlName="code">
+      <input type="text"  name="code" class="form-control" formControlName="code">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Nombre</label>
-      <input type="text"  name="name" class="form-control" FormControlName="name">
+      <input type="text"  name="name" class="form-control" formControlName="name">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Apellido</label>
-      <input type="text"  name="lastname" class="form-control" FormControlName="lastname">
+      <input type="text"  name="lastname" class="form-control" formControlName="lastname">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Año de nacimiento</label>
-      <input type="text"  name="bd_year" class="form-control" FormControlName="bd_year">
+      <input type="text"  name="bd_year" class="form-control" formControlName="bd_year">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Año de fallecimiento</label>
-      <input type="text"  name="death_year" class="form-control" FormControlName="death_year">
+      <input type="text"  name="death_year" class="form-control" formControlName="death_year">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>lugar de nacimiento</label>
-      <input type="text"  name="bd_place" class="form-control" FormControlName="bd_place">
+      <input type="text"  name="bd_place" class="form-control" formControlName="bd_place">
     </div>
   </div>
   
   <button (click)= "saveAuthor()" class="btn btn-primary">Guardar</button>
 </form>
 
+<table>
+  <tr>
+      <td>Nombre</td>
+      <td>Apellido</td>
+      <td>Fecha N</td>
+      <td>Nombre</td>
+      <td>Nombre</td>
+  </tr>
+  <tr *ngFor = "let author of authors">
+      <td>{{author.name}}</td>
+      <td>{{author.lastname}}</td>
+  </tr>
+</table>
 

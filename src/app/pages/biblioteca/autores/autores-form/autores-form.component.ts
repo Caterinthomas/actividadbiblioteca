@@ -10,7 +10,9 @@ export class AutorFormComponent implements OnInit {
   public autorFormulario: FormGroup;
   public titulo="Autores form";
   public authors:any;
-  constructor(protected fb:FormBuilder, protected service:AuthorService) { }
+  constructor(protected fb:FormBuilder, protected service:AuthorService) {
+    this.createForm()
+   }
   ngOnInit() {
     this.service.getAuthors().subscribe(data =>{
 

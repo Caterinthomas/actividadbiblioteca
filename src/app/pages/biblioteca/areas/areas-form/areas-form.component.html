@@ -1,13 +1,9 @@
-<br><br>
-{{titulo}}
-<br><br><br>
-{{titulo}}
 
-  <form FormGroup='areasFormulario' >
+  <form [formGroup]='areasFormulario' >
   <div class="form-row">
       <div class="form-group col-md-6">
         <label >Codigo</label>
-        <input type="text" class="form-control" FormControlName="code" >
+        <input type="text" class="form-control" formControlName="code" >
        </div>
 
   </div> 
@@ -15,11 +11,24 @@
   <div class="form-row">
       <div class="form-group col-md-6">
           <label>Descripcion</label>
-          <input type="text" class="form-control"  FormControlName="description" >
+          <input type="text" class="form-control"  formControlName="description" >
       </div>
   </div> 
   
-      <button type="submit"  class="btn btn-primary">Guardar</button> 
+  <button (click)= "saveareas()" class="btn btn-primary">Guardar</button> 
   </form>
 
- 
+ <table>
+    <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Fecha N</td>
+        <td>Nombre</td>
+        <td>Nombre</td>
+    </tr>
+    <tr *ngFor = "let areas of areas">
+        <td>{{areas.code}}</td>
+        <td>{{areas.description}}</td>
+    </tr>
+  </table>
+  

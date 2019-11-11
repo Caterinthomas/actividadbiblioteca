@@ -1,44 +1,36 @@
-<form FormGroup="editorialFormulario">
+<form [formGroup]="editorialFormulario">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label>code</label>
-        <input type="text" class="form-control" FormControlName="code">
+        <input type="text" class="form-control" formControlName="code">
       </div>
       <div class="form-group col-md-6">
         <label>Descripcion</label>
-        <input type="text" class="form-control" FormControlName="descripcion">
+        <input type="text" class="form-control" formControlName="description">
       </div>
     </div>
     <div class="form-row">
             <div class="form-group col-md-6">
               <label>Pais</label>
-              <input type="text" class="form-control" FormControlName="country">
+              <input type="text" class="form-control" formControlName="country">
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Cubierta</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="fantasia">
             </div>
-    </div>
-    <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Paginas</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Editorial">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Numeros de ejemplares</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="Aleman">
-            </div>
-    </div>
-    <div class="form-row ">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Estanteria</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="200">
-            </div>
-              
-          
-    </div>
             
-    <button type="submit" class="btn btn-primary">Submit</button>
+            <button (click)= "saveeditorial()" class="btn btn-primary">Guardar</button>
     
   </form>
   
+  <table>
+    <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Fecha N</td>
+        <td>Nombre</td>
+        <td>Nombre</td>
+    </tr>
+    <tr *ngFor = "let editorial of editorial">
+        <td>{{editorial.code}}</td>
+        <td>{{editorial.description}}</td>
+        <td>{{editorial.country}}</td>
+    </tr>
+  </table>
